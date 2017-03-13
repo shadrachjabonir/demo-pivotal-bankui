@@ -1,0 +1,45 @@
+<!doctype html>
+<html >
+	<head>
+		<title>Hello Pivotal</title>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+  	<script src="hello.js"></script>
+	</head>
+
+	<body ng-app="demo-pivotal-bankui" ng-cloak>
+		<div ng-controller='demo-pivotal-getAcountDetail'>
+			<md-toolbar class="md-primary">
+	         <div class="md-toolbar-tools">
+	            <h2 class="md-flex">Welcome to Bank UI</h2>
+	         </div>
+	      </md-toolbar>
+	      <md-content flex layout-padding>
+					<p>Hi, {{accountDetail.name}} Your Balance now: {{accountDetail.amount}}</p>
+					<section layout="row" layout-sm="column" layout-align="left" layout-wrap>
+						<md-input-container class="md-block" >
+	            <label>Amount</label>
+	            <input ng-model="depositAmount">
+							<md-button class="md-primary md-raised md-cornered" ng-click="deposit()">Deposit</md-button>
+
+	          </md-input-container>
+					</section>
+					<section layout="row" layout-sm="column" layout-align="left" layout-wrap>
+						<md-input-container class="md-block" >
+	            <label>Amount</label>
+	            <input ng-model="withdrawalAmount">
+							<md-button class="md-warn md-raised md-cornered" ng-click="withdrawal()">Withdrawal</md-button>
+
+	          </md-input-container>
+					</section>
+
+
+	      </md-content>
+		</div>
+	
+	</body>
+</html>

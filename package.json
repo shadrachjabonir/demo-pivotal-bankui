@@ -1,0 +1,12 @@
+{
+  "name": "DemoPivotalShadrach",
+  "version": "0.0.1",
+  "description": "A Node.js App for Demo Pivotal",
+  "dependencies": {
+	"express": "3.4.8"
+   },
+  "engine":  {
+    "node": "6.10.0",
+    "npm": "4.3.0"
+  }
+}
